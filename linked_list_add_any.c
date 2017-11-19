@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include <stdlib.h>
+#include<stdlib.h>
 
 struct node {
   int data;
@@ -43,7 +43,7 @@ int main()
 	head->next = NULL;
 	int ch, dat, pos;
 	do{
-		printf("1.Add to front\n2.App to position\n3.Display all\n4.Exit");
+		printf("1.Add to front\n2.Add to position\n3.Display all\n4.Exit");
 		scanf("%d", &ch);
 		switch(ch)
 		{
