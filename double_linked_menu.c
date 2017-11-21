@@ -49,8 +49,8 @@ void delete(int data)
 	temp = head;
 	while(temp->next!=NULL)
 	{	if(temp->next->data == data)
-		{	temp->next = temp->next->next;
-			temp->next->prev = temp;
+		{	temp->next->prev = temp;
+      temp->next = temp->next->next;	
 			break;
 		}
 		temp = temp->next;
@@ -60,7 +60,7 @@ void delete(int data)
 void display()
 {
 	temp = head->next;
-	while(temp!=NULL)	
+	while(temp!=NULL)
 	{	printf("Data: %d\n",temp->data);
 		temp = temp->next;
 	}
